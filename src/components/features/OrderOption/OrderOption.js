@@ -15,7 +15,10 @@ const optionTypes = {
 };
 
 
-const OrderOptions = ({name, type, ...otherProps}) => {
+const OrderOptions = ({name, type, id, setOrderOption , ...otherProps}) => {
+
+  console.log('otherProps', otherProps);
+  
   const OptionComponent = optionTypes[type];
   if(!OptionComponent){
     return null;
@@ -24,7 +27,7 @@ const OrderOptions = ({name, type, ...otherProps}) => {
       <div className={styles.component}>
         <h3 className={styles.title}>{name}</h3>
         <OptionComponent
-          {...otherProps}
+          {...otherProps} setOptionValue={value => setOrderOption({[id]: value})}
         />
       </div>
     );
@@ -33,6 +36,8 @@ const OrderOptions = ({name, type, ...otherProps}) => {
 
 OrderOptions.propTypes = {
   name: PropTypes.string,
+  id: PropTypes.string,
+  setOrderOption: PropTypes.func,
 };
 
 
