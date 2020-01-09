@@ -10,7 +10,6 @@ import {formatPrice} from '../../../utils/formatPrice';
 
 const OrderSummary = ({tripCost, options}) => {
 
-  console.log('tripcost', tripCost);
   console.log('options', options);
   
 

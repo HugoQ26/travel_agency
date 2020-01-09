@@ -11,6 +11,7 @@ import pricing from '../../../data/pricing.json';
 const OrderForm = ({tripCost, options, setOrderOption}) => {
   
   console.log('options', options);
+  console.log('options', tripCost);
 
   const pricingMap = (pricing) => {
     return (
