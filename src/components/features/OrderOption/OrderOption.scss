@@ -8,20 +8,32 @@
   margin-bottom: ($base-size * 2);
 }
 
+.dropdown {
+  margin: ($base-size / 2);
+  display: inline-block;
+}
+
 .input,
 .dropdown {
-  width: 80%;
   border: 1px solid lighten($color-dark, 60%);
-  padding: ($base-size / 2);
+
   &Small {
     width: 30%;
   }
 }
 
+.input,
+.dropdown,
+.date,
+.number,
+.text,
 .icon {
-  cursor: pointer;
   width: 80%;
   padding: ($base-size / 2);
+}
+
+.icon {
+  cursor: pointer;
 
   i {
     padding-right: ($base-size / 2);
@@ -35,10 +47,24 @@
 .checkboxes {
   display: flex;
   flex-direction: column;
+  padding: ($base-size / 2);
 }
 
+p {
+  display: inline-block;
+  margin: 0 0 0 15px;
+}
+
+.date,
+.number,
 .text {
-}
+  input {
+    width: 80%;
+    border: 1px solid lighten($color-dark, 60%);
+    padding: ($base-size / 2);
 
-.date {
+    &Active {
+      background: $color-primary;
+    }
+  }
 }
