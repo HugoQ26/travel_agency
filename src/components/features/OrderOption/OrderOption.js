@@ -18,7 +18,6 @@ const optionTypes = {
   date: OrderOptionDate,
 };
 
-
 const OrderOptions = ({name, type, id, setOrderOption , ...otherProps}) => {
 
   console.log('otherProps', otherProps);
@@ -43,7 +42,6 @@ OrderOptions.propTypes = {
   id: PropTypes.string,
   setOrderOption: PropTypes.func,
 };
-
 
 export default OrderOptions;
 

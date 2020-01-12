@@ -3,9 +3,7 @@ import PropTypes from 'prop-types';
 
 import styles from './OrderOption.scss';
 
-
 const OrderOptionNumber = ({price, currentValue, setOptionValue, limits}) => {
-
     
   return (
     <div className={styles.number}>
@@ -22,7 +20,6 @@ OrderOptionNumber.propTypes = {
   setOptionValue: PropTypes.func,
   price: PropTypes.string,
 };
-
 
 export default OrderOptionNumber;
 

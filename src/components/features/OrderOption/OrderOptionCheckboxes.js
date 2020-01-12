@@ -36,6 +36,5 @@ OrderOptionCheckboxes.propTypes= {
   setOptionValue: PropTypes.func,
 };
 
-
 export default OrderOptionCheckboxes;
 

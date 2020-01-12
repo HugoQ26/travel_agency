@@ -6,12 +6,7 @@ import styles from './OrderSummary.scss';
 import {calculateTotal} from '../../../utils/calculateTotal';
 import {formatPrice} from '../../../utils/formatPrice';
 
-// import { Grid, Row, Col } from 'react-flexbox-grid';
-
 const OrderSummary = ({tripCost, options}) => {
-
-  console.log('options', options);
-  
 
   const price = calculateTotal(formatPrice(tripCost), options);
 

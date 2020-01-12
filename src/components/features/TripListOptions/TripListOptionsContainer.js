@@ -3,7 +3,6 @@ import TripListOptions from './TripListOptions';
 import {getAllTags} from '../../../redux/tagsRedux';
 import {getAllFilters, changeSearchPhrase, changeDuration, addTag, removeTag} from '../../../redux/filtersRedux';
 
-
 const mapStateToProps = state => ({
   tags: getAllTags(state),
   filters: getAllFilters(state),

@@ -3,10 +3,6 @@ import PropTypes from 'prop-types';
 
 import styles from './OrderOption.scss';
 
-
-
-
-
 const OrderOptionText = ({setOptionValue, currentValue}) => (
 
   <div className={styles.text}>  

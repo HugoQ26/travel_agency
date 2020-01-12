@@ -6,8 +6,6 @@ import OrderSummary from '../OrderSummary/OrderSummary';
 import OrderOption from '../OrderOption/OrderOption';
 import pricing from '../../../data/pricing.json';
 
-
-
 const OrderForm = ({tripCost, options, setOrderOption}) => {
   
   console.log('options', options);
@@ -23,8 +21,7 @@ const OrderForm = ({tripCost, options, setOrderOption}) => {
         );
       })
     );
-  };
-  
+  };  
 
   return (
     <Grid>
@@ -43,8 +40,5 @@ OrderForm.propTypes = {
   options: PropTypes.object,
   setOrderOption: PropTypes.func,
 };
-
-
-
 
 export default OrderForm;

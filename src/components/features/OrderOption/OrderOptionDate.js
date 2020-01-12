@@ -5,18 +5,13 @@ import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker-cssmodules.css';
 import styles from './OrderOption.scss';
 
-
-
-
-const OrderOptionDate = ({setOptionValue, currentValue}) => {
-    
+const OrderOptionDate = ({setOptionValue, currentValue}) => {    
     
   const handleChange = (date) => {
     console.log(date);
     setOptionValue(`${date.toLocaleDateString()}`);
   };
-    
-    
+        
   return (
     <div className={styles.date}>  
       <DatePicker          
