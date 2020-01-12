@@ -2,7 +2,7 @@
 
 export const getAllTrips = ({trips}) => trips;
 
-export const getFilteredTrips = ({trips, filters}) => {
+export const getFilteredTrips = ({trips, filters, regions}) => {
   let output = trips;
 
   // filter by search phrase
@@ -15,7 +15,7 @@ export const getFilteredTrips = ({trips, filters}) => {
  
   output = output.filter(trip => trip.days <= filters.duration.to && trip.days >= filters.duration.from);
 
-  // TODO - filter by tags
+  // filter by tags
 
   if(filters.tags.length) {
     output = output.filter(trip => {
@@ -24,6 +24,19 @@ export const getFilteredTrips = ({trips, filters}) => {
           return trip;
         }
       }
+    });
+  }
+
+  // filter by regions
+
+  if(filters.regions.length) {
+
+    output = output.filter(trip => {      
+      for (const regionTag of filters.regions) {
+        if(regions[regionTag].countries.includes(trip.country.code)){
+          return trip;
+        }   
+      }        
     });
   }
 
