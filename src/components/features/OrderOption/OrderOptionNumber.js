@@ -7,7 +7,7 @@ const OrderOptionNumber = ({price, currentValue, setOptionValue, limits}) => {
     
   return (
     <div className={styles.number}>
-      <input className={[styles.input, styles.inputSmall].join(' ')} type="number" value={currentValue} min={limits.min} max={limits.max} onChange={event => setOptionValue(event.currentTarget.value)}/> 
+      <input className={[styles.input, styles.inputSmall].join(' ')} type="number" value={currentValue} min={limits.min} max={limits.max} onChange={event => setOptionValue(Number(event.currentTarget.value))}/> 
       <p>+ {price} price</p> 
     </div>);
 };

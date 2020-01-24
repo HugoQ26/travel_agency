@@ -1,0 +1,54 @@
+{
+  "orders": [
+    {
+      "car-rental": "full",
+      "accommodation": "hotel",
+      "features": [
+        "all-inclusive"
+      ],
+      "adults": "2",
+      "children": 0,
+      "name": "",
+      "contact": "",
+      "start-date": "22.01.2020",
+      "totalCost": "$103,362",
+      "id": 1
+    },
+    {
+      "car-rental": "full",
+      "accommodation": "hotel",
+      "features": [],
+      "adults": 1,
+      "children": 0,
+      "name": "",
+      "contact": "",
+      "start-date": "",
+      "totalCost": "$51,481",
+      "id": 2
+    },
+    {
+      "car-rental": "",
+      "accommodation": "hotel",
+      "features": [],
+      "adults": "2",
+      "children": "1",
+      "name": "",
+      "contact": "",
+      "start-date": "",
+      "totalCost": "$128,452",
+      "id": 3
+    },
+    {
+      "car-rental": "",
+      "accommodation": "hotel",
+      "features": [],
+      "adults": 2,
+      "children": 1,
+      "name": "",
+      "contact": "",
+      "start-date": "",
+      "totalCost": "$128,452",
+      "id": 4
+    }
+  ]
+}
