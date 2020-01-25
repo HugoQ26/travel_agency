@@ -6,7 +6,6 @@ import OrderOption from './OrderOption';
 describe('Component OrderOption', () => {
   it('should render without crashing', ()=> {
     const component = shallow(<OrderOption type="dropdown" name="Car Rental"/>);
-    console.log(component.debug());  
   });
 
   it('should return empty object if called without required props', () => {
@@ -89,7 +88,7 @@ for(let type in optionTypes){
 
     /* type-specific tests */
     switch (type) {
-      case 'dropdown': {
+      case 'dropdown': 
         /* tests for dropdown */
         it('contains select and options', () => {
           const select = renderedSubcomponent.find('select');
@@ -110,7 +109,43 @@ for(let type in optionTypes){
           expect(mockSetOrderOption).toBeCalledWith({ [mockProps.id]: testValue });
         });
         break;
-      }
+      
+      case 'icons': 
+             
+        it('contains div with class icon', ()=>{
+          const div = renderedSubcomponent.find('.icon');
+          expect(div.length).toBe(2);
+          expect(div.at(0).type()).toBe('div');
+          expect(div.at(1).type()).toBe('div'); 
+        });
+
+        it('should run setOrderOption function on click', () => {
+          const dupa = renderedSubcomponent.find('.icon').at(0).simulate('click');
+          expect(mockSetOrderOption).toBeCalledTimes(1);   
+        });
+
+        break;
+      
+      case 'checkboxes': 
+        /* TODO */
+       
+        break;
+      
+      case 'number': 
+        /* TODO */
+       
+        break;
+      
+      case 'text': 
+        /* TODO */
+       
+        break;
+      
+      case 'date': 
+        /* TODO */
+       
+        break;
+      
     }
   });
 }
