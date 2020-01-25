@@ -143,7 +143,6 @@ for(let type in optionTypes){
         it('contains input with type number', ()=>{
           const div = renderedSubcomponent.find('input[type="number"]');
           expect(div.length).toBe(1);
-          console.log(div.debug());          
         });
 
         it('should run setOrderOption function on change', () => {
@@ -155,7 +154,16 @@ for(let type in optionTypes){
         break;
       
       case 'text': 
-        /* TODO */
+        it('contains input with type text', ()=>{
+          const div = renderedSubcomponent.find('input[type="text"]');
+          expect(div.length).toBe(1);
+        });
+
+        it('should run setOrderOption function on change', () => {
+          renderedSubcomponent.find('input').simulate('change', {currentTarget: {value: testValue}});
+          expect(mockSetOrderOption).toBeCalledTimes(1);
+          expect(mockSetOrderOption).toBeCalledWith({ [mockProps.id]: testValue });
+        });
        
         break;
       

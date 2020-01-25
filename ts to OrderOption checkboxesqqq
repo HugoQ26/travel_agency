@@ -1,0 +1,125 @@
+[33mcommit 08ebce94bda905958a51295491774dc41b862607[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Marcin Kubiak <hugo26@o2.pl>
+Date:   Sat Jan 25 15:28:41 2020 +0100
+
+            /* TODO */
+
+[33mcommit f169328aec56aada5d4e29d56f455335f381bb35[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: Marcin Kubiak <hugo26@o2.pl>
+Date:   Sat Jan 25 15:17:30 2020 +0100
+
+    add tests to OrderOption checkboxes
+
+[33mcommit 8c61e1c1bd459cbc599eeb0ae681c442793cc8f0[m
+Author: Marcin Kubiak <hugo26@o2.pl>
+Date:   Sat Jan 25 12:00:01 2020 +0100
+
+    add tests to OrderOption icons
+
+[33mcommit d73006a3161efbd6486d7576673ebf0e917f3aff[m
+Author: Marcin Kubiak <hugo26@o2.pl>
+Date:   Sat Jan 25 08:54:42 2020 +0100
+
+    add tests to OrderOption dropdown
+
+[33mcommit d2d08329e057a3558b0edf954c32a1b8150b6592[m
+Author: Marcin Kubiak <hugo26@o2.pl>
+Date:   Sat Jan 25 08:43:33 2020 +0100
+
+    create setup for OrderOption tests
+
+[33mcommit 2ae873158b1d9ad9105626df7e65642c0b820d3a[m
+Author: Marcin Kubiak <hugo26@o2.pl>
+Date:   Fri Jan 24 09:35:34 2020 +0100
+
+    add tests to TripSummary and Hero component
+
+[33mcommit 7288d23547c8edd412f605d523a5fb29f2060f3d[m
+Author: Marcin Kubiak <hugo26@o2.pl>
+Date:   Sun Jan 12 18:47:41 2020 +0100
+
+    add calculate trip start and end in OrderSummary
+
+[33mcommit ed926a9db81cdbe4a8c89194b722a7473dc1361e[m
+Author: Marcin Kubiak <hugo26@o2.pl>
+Date:   Sun Jan 12 17:40:09 2020 +0100
+
+    add fileter by regions in TripListOptions
+
+[33mcommit d76264011253f09820c95bba4a90fc3867819f2f[m
+Author: Marcin Kubiak <hugo26@o2.pl>
+Date:   Sun Jan 12 10:16:46 2020 +0100
+
+    change code organization in some files for better experience without changing functionality
+
+[33mcommit b640c36c557a19d5b2e68e36e7824588aa156975[m
+Author: Marcin Kubiak <hugo26@o2.pl>
+Date:   Sat Jan 11 13:49:54 2020 +0100
+
+    fix class attribute in OrderOptionText
+
+[33mcommit 14e3825efca8a3583af9aed8a4469120c3a7d188[m
+Author: Marcin Kubiak <hugo26@o2.pl>
+Date:   Sat Jan 11 10:33:54 2020 +0100
+
+    change ccs to orderOptions modules
+
+[33mcommit 5a7e8fb1cd6d5f38507b8eea5208c2c1301b97f3[m
+Author: Marcin Kubiak <hugo26@o2.pl>
+Date:   Sat Jan 11 07:27:39 2020 +0100
+
+    add OrderOptionText and OrderOptionDate components
+
+[33mcommit bf5f39bb010d4fecb4a7b2caf060cd3e0dc82812[m
+Author: Marcin Kubiak <hugo26@o2.pl>
+Date:   Thu Jan 9 22:49:45 2020 +0100
+
+    add checkboxes functionality
+
+[33mcommit d16a41e69fa404bdc6c03ec42f12093494928c32[m
+Author: Marcin Kubiak <hugo26@o2.pl>
+Date:   Thu Jan 9 11:32:04 2020 +0100
+
+    add OrderOptionNumber Component functionality
+
+[33mcommit 9717625a2abcf7aded488492a5af6322344f3d0e[m
+Author: Marcin Kubiak <hugo26@o2.pl>
+Date:   Thu Jan 9 11:06:09 2020 +0100
+
+    change styling in OrderOptionIcons
+
+[33mcommit 4c51f51eeed31d1dfc84f57dd88c1c2813118578[m
+Author: Marcin Kubiak <hugo26@o2.pl>
+Date:   Thu Jan 9 10:18:22 2020 +0100
+
+    add OrderOptions Components + IIcons
+
+[33mcommit c796c32feb8796f54f5531b9337375bbbe24788b[m
+Author: Marcin Kubiak <hugo26@o2.pl>
+Date:   Thu Jan 9 01:14:47 2020 +0100
+
+    add options placeholders
+
+[33mcommit 501f2aace3d947114a293a82c1fed02dc4c6ae26[m
+Author: Marcin Kubiak <hugo26@o2.pl>
+Date:   Wed Jan 8 22:41:14 2020 +0100
+
+    add display price functionality
+
+[33mcommit e0db8e5408c698addc83f0258bab1fda8b860939[m
+Author: Marcin Kubiak <hugo26@o2.pl>
+Date:   Mon Jan 6 12:28:07 2020 +0100
+
+    Add animation to Routing
+
+[33mcommit 216e4eb0ebd70333e280375431e51c8ebe190734[m
+Author: Marcin Kubiak <hugo26@o2.pl>
+Date:   Sun Jan 5 15:49:50 2020 +0100
+
+    add filter functionality
+
+[33mcommit d957a04e370a449495f3b4f18791f45ad987e439[m
+Author: Marcin Kubiak <hugo26@o2.pl>
+Date:   Sat Jan 4 23:26:01 2020 +0100
+
+    first commit
