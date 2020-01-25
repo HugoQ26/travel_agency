@@ -130,7 +130,7 @@ for(let type in optionTypes){
           const div = renderedSubcomponent.find('.checkboxes');
           expect(div.length).toBe(1);
         });
-        it('should run setOrderOption function on click', () => {
+        it('should run setOrderOption function onChange checkbox', () => {
           const div = renderedSubcomponent.find(`[value="${testValue}"]`);
           div.simulate('change', {currentTarget: {checked: true}});  
           expect(mockSetOrderOption).toBeCalledTimes(1);   
@@ -140,8 +140,18 @@ for(let type in optionTypes){
         break;
       
       case 'number': 
-        /* TODO */
-       
+        it('contains input with type number', ()=>{
+          const div = renderedSubcomponent.find('input[type="number"]');
+          expect(div.length).toBe(1);
+          console.log(div.debug());          
+        });
+
+        it('should run setOrderOption function on change', () => {
+          renderedSubcomponent.find('input').simulate('change', {currentTarget: {value: testValueNumber}});
+          expect(mockSetOrderOption).toBeCalledTimes(1);
+          expect(mockSetOrderOption).toBeCalledWith({ [mockProps.id]: testValueNumber });
+        });
+
         break;
       
       case 'text': 
