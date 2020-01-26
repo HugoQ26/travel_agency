@@ -11,7 +11,7 @@ import {calculateTotal} from '../../../utils/calculateTotal';
 
 import pricing from '../../../data/pricing.json';
 
-const OrderForm = ({tripCost, options, setOrderOption, tripDays}) => {
+const OrderForm = ({tripCost, options, setOrderOption, tripDays, tripName, tripId}) => {
   
   console.log('options', options);
   console.log('options', tripCost);
@@ -26,7 +26,7 @@ const OrderForm = ({tripCost, options, setOrderOption, tripDays}) => {
         );
       })
     );
-  };  
+  }; 
 
   const sendOrder = (options, tripCost) => {
     const totalCost = formatPrice(calculateTotal(tripCost, options));
@@ -34,6 +34,8 @@ const OrderForm = ({tripCost, options, setOrderOption, tripDays}) => {
     const payload = {
       ...options,
       totalCost,
+      tripName,
+      tripId,
     };
   
     const url = settings.db.url + '/' + settings.db.endpoint.orders;
@@ -55,13 +57,30 @@ const OrderForm = ({tripCost, options, setOrderOption, tripDays}) => {
       });
   };
 
+  const enableButton = ({name, contact, 'start-date':startDate}) => {
+    if(name && contact && startDate) {
+      return false;
+    }
+    return true;
+  };
+
+  const buttonText = () => {
+    if(enableButton(options)){
+      return 'Please fill out required inputs to make an order';
+    }
+    return 'Order now!';
+  };
+
+  console.log(enableButton(options));
+  
+
   return (
     <Grid>
       <Row>
         {pricingMap(pricing)}
         <Col xs={12}>          
           <OrderSummary tripCost={tripCost} options={options} tripDays={tripDays}/>
-          <Button onClick={() => sendOrder(options, tripCost)}>Order now!</Button>
+          <Button onClick={() => sendOrder(options, tripCost)} enableButton={enableButton(options)}>{buttonText()}</Button>
         </Col>
       </Row>
     </Grid>
@@ -73,6 +92,8 @@ OrderForm.propTypes = {
   options: PropTypes.object,
   setOrderOption: PropTypes.func,
   tripDays: PropTypes.number,
+  tripName: PropTypes.string.isRequired, 
+  tripId: PropTypes.string.isRequired,
 };
 
 export default OrderForm;

@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import DatePicker from 'react-datepicker';
 
+import OptionRequired from './OptionRequired';
 import 'react-datepicker/dist/react-datepicker-cssmodules.css';
 import styles from './OrderOption.scss';
 
@@ -14,6 +15,8 @@ const OrderOptionDate = ({setOptionValue, currentValue}) => {
         
   return (
     <div className={styles.date}>  
+
+      {!currentValue && <OptionRequired text="*required"/>} 
       <DatePicker          
         placeholderText="Click to select a date"
         dateFormat="yyyy/MM/dd"    

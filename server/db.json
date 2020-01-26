@@ -49,6 +49,56 @@
       "start-date": "",
       "totalCost": "$128,452",
       "id": 4
+    },
+    {
+      "car-rental": "",
+      "accommodation": "hotel",
+      "features": [],
+      "adults": 1,
+      "children": 0,
+      "name": "a",
+      "contact": "",
+      "start-date": "",
+      "totalCost": "$51,381",
+      "id": 5
+    },
+    {
+      "car-rental": "",
+      "accommodation": "hotel",
+      "features": [],
+      "adults": 1,
+      "children": 0,
+      "name": "a",
+      "contact": "a",
+      "start-date": "",
+      "totalCost": "$51,381",
+      "id": 6
+    },
+    {
+      "car-rental": "",
+      "accommodation": "hotel",
+      "features": [],
+      "adults": 1,
+      "children": 0,
+      "name": "asasa",
+      "contact": "asas",
+      "start-date": "",
+      "totalCost": "$51,381",
+      "id": 7
+    },
+    {
+      "car-rental": "",
+      "accommodation": "hotel",
+      "features": [],
+      "adults": 1,
+      "children": 0,
+      "name": "s",
+      "contact": "s",
+      "start-date": "27.01.2020",
+      "totalCost": "$51,381",
+      "tripName": "Pleasant travel in cool Turkey",
+      "tripId": "5cc1d10130dfa407e2e54e20",
+      "id": 8
     }
   ]
 }

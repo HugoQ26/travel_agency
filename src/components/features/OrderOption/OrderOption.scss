@@ -30,6 +30,7 @@
 .icon {
   width: 80%;
   padding: ($base-size / 2);
+  position: relative;
 }
 
 .icon {
@@ -67,4 +68,13 @@ p {
       background: $color-primary;
     }
   }
+}
+
+.required {
+  color: $color-danger;
+  font-size: 12px;
+
+  position: absolute;
+  top: -15px;
+  left: 0;
 }

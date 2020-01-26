@@ -25,3 +25,12 @@
     }
   }
 }
+
+.component:disabled {
+  background: $color-background;
+  cursor: inherit;
+}
+
+.buttonWrapper {
+  position: relative;
+}

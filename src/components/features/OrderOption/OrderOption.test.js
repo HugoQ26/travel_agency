@@ -169,7 +169,6 @@ for(let type in optionTypes){
         break;
       
       case 'date': 
-        /* TODO */
         it('contains Datepicker component', ()=>{
           const div = renderedSubcomponent.find(DatePicker);          
           expect(div.length).toBe(1);
