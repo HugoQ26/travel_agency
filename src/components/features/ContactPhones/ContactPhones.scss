@@ -1,0 +1,15 @@
+@import '../../../styles/settings.scss';
+
+.contact {
+  text-align: right;
+  span {
+    padding-left: $base-size;
+  }
+}
+
+@media (max-width: 767px) {
+  .contact {
+    text-align: center;
+    margin-top: ($base-size * 1.5);
+  }
+}

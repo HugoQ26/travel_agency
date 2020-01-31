@@ -26,9 +26,7 @@
         border-bottom: 4px solid $color-primary;
       }
     }
-
   }
-
 }
 
 .logo {
@@ -45,27 +43,12 @@
   font-size: ($base-size * 1.5);
 }
 
-.contact {
-  text-align: right;
-  span {
-    padding-left: $base-size;
-  }
-}
-
 @media (max-width: 767px) {
-
-  .component  {
+  .component {
     text-align: center;
 
     nav {
       margin-top: ($base-size * 1.5);
     }
-
   }
-
-  .contact {
-    text-align: center;
-    margin-top: ($base-size * 1.5);
-  }
-
 }
